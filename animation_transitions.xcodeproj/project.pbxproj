@@ -13,6 +13,9 @@
 		02137D0919CE937400B22916 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02137D0819CE937400B22916 /* Images.xcassets */; };
 		02137D0C19CE937400B22916 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02137D0A19CE937400B22916 /* LaunchScreen.xib */; };
 		02137D1819CE937400B22916 /* animation_transitionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02137D1719CE937400B22916 /* animation_transitionsTests.swift */; };
+		02137D2219CE964000B22916 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02137D2119CE964000B22916 /* TransitionManager.swift */; };
+		02137D2519CEB34C00B22916 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02137D2319CEB34C00B22916 /* TestViewController.swift */; };
+		02137D2619CEB34C00B22916 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02137D2419CEB34C00B22916 /* TestViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		02137D1119CE937400B22916 /* animation_transitionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = animation_transitionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02137D1619CE937400B22916 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02137D1719CE937400B22916 /* animation_transitionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animation_transitionsTests.swift; sourceTree = "<group>"; };
+		02137D2119CE964000B22916 /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
+		02137D2319CEB34C00B22916 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		02137D2419CEB34C00B22916 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +86,12 @@
 				02137D0119CE937400B22916 /* AppDelegate.swift */,
 				02137D0319CE937400B22916 /* ViewController.swift */,
 				02137D0519CE937400B22916 /* Main.storyboard */,
+				02137D2119CE964000B22916 /* TransitionManager.swift */,
 				02137D0819CE937400B22916 /* Images.xcassets */,
 				02137D0A19CE937400B22916 /* LaunchScreen.xib */,
 				02137CFF19CE937400B22916 /* Supporting Files */,
+				02137D2319CEB34C00B22916 /* TestViewController.swift */,
+				02137D2419CEB34C00B22916 /* TestViewController.xib */,
 			);
 			path = animation_transitions;
 			sourceTree = "<group>";
@@ -194,6 +203,7 @@
 			files = (
 				02137D0719CE937400B22916 /* Main.storyboard in Resources */,
 				02137D0C19CE937400B22916 /* LaunchScreen.xib in Resources */,
+				02137D2619CEB34C00B22916 /* TestViewController.xib in Resources */,
 				02137D0919CE937400B22916 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,7 +222,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02137D2219CE964000B22916 /* TransitionManager.swift in Sources */,
 				02137D0419CE937400B22916 /* ViewController.swift in Sources */,
+				02137D2519CEB34C00B22916 /* TestViewController.swift in Sources */,
 				02137D0219CE937400B22916 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +351,7 @@
 				INFOPLIST_FILE = animation_transitions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -349,6 +362,7 @@
 				INFOPLIST_FILE = animation_transitions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
